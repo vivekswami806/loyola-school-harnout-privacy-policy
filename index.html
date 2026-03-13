@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PRIVACY POLICY - Loyola School Harnaut</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a2744;
+      --gold: #c8922a;
+      --gold-light: #f0d9a8;
+      --blue: #2e5fa3;
+      --light-bg: #f5f7fb;
+      --white: #ffffff;
+      --text: #2d3748;
+      --muted: #718096;
+      --border: #dde3ef;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--light-bg);
+      padding: 40px 20px;
+    }
+
+    .wrapper {
+      max-width: 860px;
+      margin: auto;
+      background: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(26,39,68,0.12);
+    }
+
+    /* Header */
+    .header {
+      background: var(--navy);
+      padding: 40px 50px 30px;
+      text-align: center;
+      position: relative;
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(200,146,42,0.03) 40px,
+        rgba(200,146,42,0.03) 80px
+      );
+    }
+
+    .school-crest {
+      width: 70px;
+      height: 70px;
+      background: var(--gold);
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--navy);
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 0 4px rgba(200,146,42,0.25);
+    }
+
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: var(--white);
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+    }
+
+    .header .tagline {
+      color: var(--gold-light);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 4px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .header .doc-title {
+      margin-top: 20px;
+      background: var(--gold);
+      color: var(--navy);
+      display: inline-block;
+      padding: 6px 28px;
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .last-updated {
+      text-align: center;
+      padding: 12px;
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--light-bg);
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Body */
+    .body {
+      padding: 40px 50px 50px;
+    }
+
+    /* Callout boxes */
+    .box-warning {
+      background: #fffbf0;
+      border-left: 4px solid var(--gold);
+      border-radius: 0 4px 4px 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+
+    .box-info {
+      background: #f0f6ff;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 4px 4px 0;
+      padding: 18px 22px;
+      margin: 24px 0;
+      font-size: 14px;
+    }
+
+    .box-warning strong, .box-info strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--navy);
+    }
+
+    /* Section headings */
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 36px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 .num {
+      background: var(--navy);
+      color: var(--gold);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--navy);
+    }
+
+    /* Contact */
+    .contact-card {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 30px;
+    }
+
+    .contact-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: var(--gold);
+      grid-column: 1/-1;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    .contact-item {
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+
+    .contact-item .label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold-light);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--light-bg);
+      border-top: 1px solid var(--border);
+      padding: 16px 50px;
+      text-align: center;
+      font-size: 11.5px;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 600px) {
+      .body { padding: 28px 24px 36px; }
+      .header { padding: 28px 24px 20px; }
+      .contact-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="school-crest">L</div>
+    <h1>Loyola School Harnaut</h1>
+    <div class="tagline">Harnaut, Nalanda · Bihar</div>
+    <div class="doc-title">Mobile App Privacy Policy</div>
+  </div>
+
+  <div class="last-updated">Last Updated: February 22, 2026</div>
+
+  <div class="body">
+
+    <!-- Disclaimer -->
+    <div class="box-warning">
+      <strong>⚑ Government Affiliation Disclaimer</strong>
+      The Loyola School Harnaut mobile application is a private Software-as-a-Service (SaaS) platform for school management. This application does <strong>NOT</strong> represent any government entity, state education department, or official board. It is a private tool used exclusively for administrative and communication purposes by Loyola School Harnaut.
+    </div>
+
+    <h3><span class="num">1</span> Introduction</h3>
+    <p>Loyola School Harnaut ("We," "Us," or "Our") respects your privacy. This Privacy Policy describes how we collect, use, and manage data through the Loyola School Harnaut mobile application, developed and managed for the exclusive use of our students, parents, and staff.</p>
+
+    <h3><span class="num">2</span> Account Provisioning &amp; Registration</h3>
+    <p>The Loyola School Harnaut app is a <strong>closed platform</strong>. There is no public account registration or self-service sign-up.</p>
+    <ul>
+      <li>Accounts are created and managed exclusively by authorized <strong>School Administrators</strong>.</li>
+      <li>Login credentials are provided directly to students, parents, and staff by the school administration.</li>
+    </ul>
+
+    <h3><span class="num">3</span> Data Deletion &amp; Account Closure</h3>
+    <div class="box-info">
+      <strong>📋 How to Request Data Deletion</strong>
+      Users have the right to request deletion of their personal information. Since accounts are managed by the school, you may:
+      <ol style="margin-top: 10px;">
+        <li>Contact the <strong>school administrative office</strong> at Loyola School Harnaut to deactivate your record.</li>
+        <li>Submit a direct deletion request to our support team at <strong>loyolaschoolharnaut@gmail.com</strong>.</li>
+      </ol>
+      <p style="margin-top: 10px; margin-bottom: 0;">Upon a valid request, personal identifiers (Name, Phone, Email, Photos) will be removed from our active databases within <strong>30 days</strong>, unless retention is legally required for academic or financial auditing purposes.</p>
+    </div>
+
+    <h3><span class="num">4</span> Information We Collect</h3>
+    <p>We process the following data to provide school-related services:</p>
+    <ul>
+      <li><strong>Personal Information:</strong> Name, Student/Staff IDs, Phone Number, and Email Address.</li>
+      <li><strong>Precise Location:</strong> Used strictly for <strong>Live Bus Tracking</strong> services for authorized parents and students.</li>
+      <li><strong>Media Access:</strong> Camera and device storage are accessed only when a user chooses to upload profile photos, homework assignments, or school documents.</li>
+      <li><strong>Device Information:</strong> Device model, OS version, and unique identifiers for security and performance monitoring.</li>
+    </ul>
+
+    <h3><span class="num">5</span> How We Use Your Data</h3>
+    <ul>
+      <li>To manage student records, attendance, and academic progress.</li>
+      <li>To facilitate communication between school staff, parents, and students.</li>
+      <li>To enable live bus tracking for student safety.</li>
+      <li>To send school notices, circulars, and event updates.</li>
+      <li>To ensure security and proper functioning of the platform.</li>
+    </ul>
+
+    <h3><span class="num">6</span> Data Security</h3>
+    <ul>
+      <li>All data is encrypted in transit using <strong>SSL/TLS (HTTPS)</strong>.</li>
+      <li>Access to sensitive school data is restricted to authorized personnel only.</li>
+      <li>We do <strong>not</strong> sell, rent, or share user personal data with third-party advertisers.</li>
+    </ul>
+
+    <h3><span class="num">7</span> Children's Privacy</h3>
+    <p>As this application is used in an educational setting, we store data relating to minors (students). Loyola School Harnaut is responsible for obtaining appropriate parental or guardian consent before uploading student data to the platform, in compliance with applicable child protection and data protection laws of India.</p>
+
+    <h3><span class="num">8</span> Changes to This Policy</h3>
+    <p>We may update this Privacy Policy periodically. Any significant changes will be communicated through the application or via official school notices. Continued use of the app after updates constitutes acceptance of the revised policy.</p>
+
+    <h3><span class="num">9</span> Contact Information</h3>
+    <div class="contact-card">
+      <h4>Loyola School Harnaut</h4>
+      <div class="contact-item">
+        <span class="label">Address</span>
+        Harnaut, Nalanda, Bihar – 803110, India
+      </div>
+      <div class="contact-item">
+        <span class="label">Email</span>
+        loyolaschoolharnaut@gmail.com
+      </div>
+      <div class="contact-item">
+        <span class="label">Website</span>
+        www.loyolaschoolharnaut.in
+      </div>
+      <div class="contact-item">
+        <span class="label">Grievance Officer</span>
+        School Administration, Loyola School Harnaut
+      </div>
+    </div>
+
+  </div><!-- /.body -->
+
+  <div class="footer">
+    Copyright &copy; 2026 Loyola School Harnaut &nbsp;·&nbsp; All rights reserved &nbsp;·&nbsp; loyolaschoolharnaut.in
+  </div>
+
+</div><!-- /.wrapper -->
+
+</body>
+</html>
